@@ -1,4 +1,6 @@
-*,*::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
@@ -11,6 +13,7 @@ html {
 body {
   display: flex;
   flex-direction: column;
+  font-family: 'Livvic', sans-serif;
   height: 100%;
   margin: 0;
 }

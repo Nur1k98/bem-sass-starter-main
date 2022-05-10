@@ -1,0 +1,36 @@
+@mixin list-global {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin flex-starter {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin main-btn($width) {
+  display: inline-block;
+  padding: 8px;
+  width: $width;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 24px;
+}
+
+@mixin max-width ($max-width) {
+  @media only screen and (max-width:$max-width) {
+    @content;
+  }
+}
+
+@mixin min-width ($min-width) {
+  @media only screen and (min-width:$min-width) {
+    @content;
+  }
+}
